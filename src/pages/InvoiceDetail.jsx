@@ -8,6 +8,7 @@ import GoBack from "../components/GoBack";
 function InvoiceDetail(props) {
   let { id } = useParams();
   let navigate = useNavigate();
+  console.log(useParams());
   const handleBack = () => {
     navigate(-1);
   };
@@ -28,7 +29,7 @@ function InvoiceDetail(props) {
   );
   return (
     <>
-      <Outlet context={[invoice, handleUpdate]} />
+      <Outlet context={[invoice, handleUpdate, handleBack]} />
       <div className="relative p-6 bg-[#F8F8FB] min-h-[100vh]">
         <GoBack onhandleBack={handleBack} />
         <StatusCard type={invoice.type} />
