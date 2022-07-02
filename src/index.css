@@ -6,3 +6,28 @@
 *::before {
     box-sizing: border-box;
 }
+
+input[type="text"] {
+    @apply rounded-[4px] pl-5 py-4 bg-[#FFFFFF] text-xs font-bold;
+    border: 1px solid #DFE3FA;
+}
+
+.calendar-disable {
+    color: #777777;
+}
+
+.select-box {
+    border: 1px solid #DFE3FA;
+    @apply rounded-[4px] p-5 py-4 bg-[#FFFFFF] text-xs font-bold;
+}
+
+.calenderInput {
+    border: 1px solid #DFE3FA;
+    @apply rounded-[4px] p-5 py-4 bg-[#FFFFFF] text-xs font-bold;
+}
+
+.calendar-svg {
+    position: absolute;
+    bottom: 17px;
+    right: 20px;
+}
